@@ -28,15 +28,11 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
-	//spring cloud
-	//implementation("org.springframework.boot:spring-boot-starter-actuator")
-	//implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
-
 	//spring data
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
 	//spring security
-	//implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("org.springframework.boot:spring-boot-starter-security")
 
 	//spring devtools
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
@@ -48,9 +44,11 @@ dependencies {
 
 	//spring test
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	//testImplementation("org.springframework.boot:spring-boot-starter-data-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    //modelmapper
+    implementation("org.modelmapper:modelmapper:3.2.0")
 
 	//jetbrains
 	implementation("org.jetbrains:annotations:23.1.0")
