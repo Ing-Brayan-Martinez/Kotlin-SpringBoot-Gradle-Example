@@ -23,8 +23,8 @@ class User(
     var userName: String,
 
     @JsonIgnore
-    @Column
-    var password: String,
+    @Column(name = "password")
+    var passwordInternal: String,
 
     @Convert(converter = BooleanConverter::class)
     @Column(nullable = false)
@@ -79,7 +79,7 @@ class User(
     }
 
     override fun getPassword(): String {
-        return password
+        return passwordInternal
     }
 
     override fun getUsername(): String {
